@@ -1,0 +1,114 @@
+---
+title: "SRT411: Security Arts, Digital Data Analysis"
+output:
+  md_document:
+    variant: markdown_github
+---
+
+
+## Todo 1
+```{r}
+((2014 - 2014)/(2014 - 1995)) * 100
+```
+
+## Todo 2
+```{r}
+start_year = 2014
+birth_year = 1995
+((start_year - 2014)/(start_year - birth_year))
+```
+
+## Todo 3
+```{r}
+sum(c(4, 5, 8, 11))
+```
+
+## Todo 4
+```{r qplot, fig.width = 4, fig.height = 3}
+plot(rnorm(100))
+```
+
+## Todo 5
+```{r}
+?sqrt
+```
+
+## Todo 6
+```{r qplot1, fig.width = 4, fig.height = 3}
+source("/Rstudio/firstscript.R")
+```
+
+## Todo 7
+```{r}
+P = c(31:60)
+Q = matrix(
+  data = P,
+  nrow = 6,
+  ncol = 5
+)
+```
+
+## Todo 8
+```{r qplot2, fig.width = 4, fig.height = 3}
+source("/Rstudio/secondscript.R")
+```
+
+## Todo 9
+```{r qplot3, fig.width = 4, fig.height = 3}
+source("/Rstudio/secondscript.R")
+```
+
+## Todo 10
+```{r}
+d = read.table(file="/Rstudio/tst0.txt", header=TRUE)
+e = d * 5
+write.table(e, file="/Rstudio/tst1.txt", row.name=FALSE)
+```
+
+## Todo 11
+```{r}
+mean(sqrt(rnorm(100)))
+```
+
+## Todo 12
+```{r qplot4, fig.width = 4, fig.height = 3}
+xa = as.Date(c("20160131", "20141205", "20160705"), format="%Y%m%d")
+ya = c(5, 7, 3)
+plot(xa, ya)
+```
+
+## Todo 13
+```{r}
+v = c(1:100)
+n = c()
+for(i in v) {
+  if(i < 5 | i > 90) {
+    n[i] = i * 10
+  } else {
+    n[i] = i * 0.1
+  }
+}
+n
+```
+
+## Todo 14
+```{r}
+fun1 = function(a.vector) {
+  n = c()
+  for(i in 0:length(a.vector)) {
+    if(i < 5 | i > 90) {
+      n[i] = i * 10
+    } else {
+      n[i] = i * 0.1
+    }
+  }
+  return(n)
+}
+fun1(c(1:100))
+```
+
+## Bonus ( Todo 15 )
+```{r}
+v = c(1:100)
+ifelse(v < 5 | v > 90, v * 10, v * 0.1)
+```
